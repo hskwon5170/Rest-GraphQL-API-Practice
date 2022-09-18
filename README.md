@@ -1,13 +1,10 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=⚡️Rest/%20GraphQL⎼API%20Practice⚡️&fontSize=33&animation=blink)
+![header](https://capsule-render.vercel.app/api?type=cylinder&color=gradient&height=300&section=header&text=⚡️Rest/%20GraphQL⎼API%20Practice⚡️&fontSize=33&animation=fadeIn)
 # Rest & GraphQl API 연습을 위해 만든 레파지토리입니다.
 ### (💡 inflearn "풀스택 리액트 토이프로젝트 - REST, GraphQL (for FE개발자)" 강의를 듣고있습니다)
 
 
 <hr/>
-
-
-
-# 풀스택 리액트 토이프로젝트 - REST, GraphQL (for FE개발자)
+<hr/>
 
 [인프런 강의 링크](https://www.inflearn.com/course/풀스택-리액트-토이프로젝트?inst=4227b52f)
 
