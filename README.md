@@ -1,11 +1,15 @@
-# Rest & GraphQl API 연습을 위해 만든 레파지토리입니다. (inflearn "풀스택 리액트 토이프로젝트 - REST, GraphQL (for FE개발자)" 강의를 듣고있습니다🚀)
+# Rest & GraphQl API 연습을 위해 만든 레파지토리입니다. 
+### (inflearn "풀스택 리액트 토이프로젝트 - REST, GraphQL (for FE개발자)" 강의를 듣고있습니다🚀)
 
-<li/>
-<li/>
-<li/>
-<li/>
-<li/>
-<li/>
+<hr/>
+<hr/>
+<hr/>
+<hr/>
+<hr/>
+<hr/>
+<hr/>
+<hr/>
+
 
 # 풀스택 리액트 토이프로젝트 - REST, GraphQL (for FE개발자)
 
