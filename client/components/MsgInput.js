@@ -1,6 +1,6 @@
 import {useRef} from 'react'
 
-export default function MsgInput ({mutate, id = undefined}) {
+export default function MsgInput ({mutate, text='', id = undefined}) {
 
     const textRef = useRef(null);
 
@@ -15,7 +15,7 @@ export default function MsgInput ({mutate, id = undefined}) {
 
     return(
         <form className = "messages__input" onSubmit={onSubmit}>
-            <textarea ref={textRef} placeholder="내용을 입력하세요"/>
+            <textarea ref={textRef} defaultValue={text} placeholder="내용을 입력하세요"/>
             <button type="submit">완료</button>
         </form>
     )

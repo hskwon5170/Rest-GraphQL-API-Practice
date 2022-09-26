@@ -12,6 +12,6 @@
     "webpack": "^5.74.0"
   },
   "scripts": {
-    "start" : "next"
+    "start": "next"
   }
 }

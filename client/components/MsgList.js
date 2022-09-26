@@ -12,6 +12,7 @@ const originalMsgs = Array(50).fill(0).map((_,i)=>({
     timestamp : 1234567890123 + i * 1000 * 60,
     text: `${i + 1} mock text`
 }))
+console.log(JSON.stringify(originalMsgs))
 
 
 
@@ -47,13 +48,22 @@ export default function MsgList () {
 
     const doneEdit = () => setEditingId(null)
 
+    const onDelete = (id) => {
+        setMsgs(msgs => {
+            const targetIndex = msgs.findIndex(msg => msg.id === id)
+            if(targetIndex <0 ) return msgs
+            const newMsgs = [...msgs]
+            newMsgs.splice(targetIndex, 1)
+            return newMsgs
+        })
+    } 
 
     return(
         <>
         <MsgInput mutate={onCreate}/>
         <ul className="messages">
     {msgs.map(el => 
-    <MsgItem key={el.id}{...el} onUpdate={onUpdate} startEdit={() => setEditingId(el.id)} isEdit={editingId === el.id}/>
+    <MsgItem key={el.id}{...el} onUpdate={onUpdate} startEdit={() => setEditingId(el.id)} isEdit={editingId === el.id} onDelete={() => onDelete(el.id)}/>
     )}
     )
     </ul>

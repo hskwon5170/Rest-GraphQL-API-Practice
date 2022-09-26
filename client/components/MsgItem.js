@@ -1,6 +1,6 @@
 import MsgInput from "./MsgInput";
 
-export default function MsgItem ({id, userId, timestamp, text, onUpdate, startEdit, isEdit}) {
+export default function MsgItem ({id, userId, timestamp, text, onUpdate, startEdit, isEdit, onDelete}) {
 
 
 
@@ -20,9 +20,10 @@ export default function MsgItem ({id, userId, timestamp, text, onUpdate, startEd
                 })}
             </sub>
             </h3>
-            {isEdit ? (<><MsgInput mutate={onUpdate} id={id}/></>) : text}
+            {isEdit ? (<><MsgInput mutate={onUpdate} text={text} id={id}/></>) : text}
             <div className="messages__buttons">
                 <button onClick={startEdit}>수정</button>
+                <button onClick={onDelete}>삭제</button>
             </div>
         </li>
     )
